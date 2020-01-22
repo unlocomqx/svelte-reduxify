@@ -9,8 +9,7 @@ npm install svelte-reduxify
 # Usage
 ```javascript
 import { reduxify } from "../svelte-reduxify";
-
-reduxify(store);
+const store = reduxify(writable(0));
 ```
 
 ## Full example
