@@ -26,6 +26,11 @@ function connectToDevTools() {
 
 // alternative for store.set because it may not have been exported
 function setState(store, state) {
+  if (typeof store.update !== "function") {
+    console.warn("svelte-reduxify: could not update store, make sure to include the update function in your store definition");
+    console.warn("Check example here: https://github.com/unlocomqx/svelte-reduxify");
+    return;
+  }
   store.update(function () {
     return state;
   });
