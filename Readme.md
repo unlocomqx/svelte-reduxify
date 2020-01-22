@@ -1,4 +1,4 @@
-![npm](https://img.shields.io/npm/v/svelte-reduxify)
+[<img src="https://img.shields.io/npm/v/svelte-reduxify">](https://www.npmjs.com/package/svelte-reduxify)
 
 # svelte-reduxify
 connect your svelte store to redux devtools with minimal code change
