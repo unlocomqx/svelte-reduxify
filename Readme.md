@@ -18,14 +18,14 @@ Original code from https://svelte.dev/examples#custom-stores
 import { writable } from 'svelte/store';
 
 function createCount() {
-	const {subscribe, set, update } = writable(0);
+  const {subscribe, set, update } = writable(0);
 
-	return {
-		subscribe,
-		increment: () => update(n => n + 1),
-		decrement: () => update(n => n - 1),
-		reset: () => set(0)
-	};
+  return {
+    subscribe,
+    increment: () => update(n => n + 1),
+    decrement: () => update(n => n - 1),
+    reset: () => set(0)
+  };
 }
 
 export const count = createCount();
@@ -39,6 +39,7 @@ function createCount() {
   const {subscribe, set, update } = writable(0);
 
   return reduxify({
+    update, // necessary for updating state from devtools
     subscribe,
     increment: () => update(n => n + 1),
     decrement: () => update(n => n - 1),
