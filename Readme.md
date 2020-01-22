@@ -1,5 +1,5 @@
 # svelte-reduxify
-connect your svelte store to redux devtools
+connect your svelte store to redux devtools with minimal code change
 
 ## Installation
 ```shell script
