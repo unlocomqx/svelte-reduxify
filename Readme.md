@@ -50,6 +50,28 @@ function createCount() {
 export const count = createCount();
 ```
 
+Comparison
+```diff
+    import { writable } from 'svelte/store';
++   import { reduxify } from "svelte-reduxify";
+  
+  function createCount() {
+    const {subscribe, set, update } = writable(0);
+ 
+-   return { 
++   return reduxify({
+      update, // necessary for updating state from devtools
+      subscribe,
+      increment: () => update(n => n + 1),
+      decrement: () => update(n => n - 1),
+      reset: () => set(0)
+-   }
++   });
+  }
+  
+  export const count = createCount();
+```
+
 ## Redux DevTools
 ### View actions
 ![Redux DevTools](./img/view-actions.png)  
