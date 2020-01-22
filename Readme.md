@@ -52,8 +52,8 @@ export const count = createCount();
 
 Comparison
 ```diff
-    import { writable } from 'svelte/store';
-+   import { reduxify } from "svelte-reduxify";
+  import { writable } from 'svelte/store';
++ import { reduxify } from "svelte-reduxify";
   
   function createCount() {
     const {subscribe, set, update } = writable(0);
