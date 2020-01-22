@@ -55,7 +55,7 @@ export const count = createCount();
 ![Redux DevTools](./img/view-actions.png)
 
 ### Dispatch actions and states
-You can dispatch an action by name
-![Dispatch Actions](./img/disapatch-actions.png)
-You can also dispatch state in `JSON` format
-![Dispatch States](./img/disapatch-states.png)
+You can dispatch an action by name  
+![Dispatch Actions](./img/disapatch-actions.png)  
+You can also dispatch state in `JSON` format  
+![Dispatch States](./img/disapatch-states.png)  
