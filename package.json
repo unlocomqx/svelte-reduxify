@@ -1,0 +1,24 @@
+{
+  "name": "svelte-reduxify",
+  "version": "1.0.0",
+  "description": "connect your svelte store to redux devtools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlocomqx/svelte-reduxify.git"
+  },
+  "keywords": [
+    "svelte",
+    "redux",
+    "store"
+  ],
+  "author": "unlocomqx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unlocomqx/svelte-reduxify/issues"
+  },
+  "homepage": "https://github.com/unlocomqx/svelte-reduxify#readme"
+}
