@@ -52,7 +52,8 @@ export const count = createCount();
 
 ## Redux DevTools
 ### View actions
-![Redux DevTools](./img/view-actions.png)
+![Redux DevTools](./img/view-actions.png)  
+You can "Jump" to states and use the timeline slider
 
 ### Dispatch actions and states
 You can dispatch an action by name  
