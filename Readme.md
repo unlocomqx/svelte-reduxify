@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/svelte-reduxify)
+
 # svelte-reduxify
 connect your svelte store to redux devtools with minimal code change
 
