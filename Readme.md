@@ -60,7 +60,7 @@ Comparison
  
 -   return { 
 +   return reduxify({
-      update, // necessary for updating state from devtools
++     update, // necessary for updating state from devtools
       subscribe,
       increment: () => update(n => n + 1),
       decrement: () => update(n => n - 1),
