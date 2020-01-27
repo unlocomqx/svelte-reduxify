@@ -10,7 +10,7 @@ npm install svelte-reduxify
 
 # Usage
 ```javascript
-import { reduxify } from "../svelte-reduxify";
+import { reduxify } from "svelte-reduxify";
 const store = reduxify(writable(0));
 ```
 
