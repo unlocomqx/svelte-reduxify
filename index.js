@@ -106,7 +106,7 @@ export function reduxify(store) {
           // this action will be used for logging
           store[prop] = function () {
             lastAction = (dispatched ? "dispatched " : "") + prop;
-            fn.apply(store, arguments);
+            return fn.apply(store, arguments);
           };;
         }
       }
