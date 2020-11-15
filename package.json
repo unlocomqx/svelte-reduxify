@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/unlocomqx/svelte-reduxify/issues"
   },
-  "homepage": "https://github.com/unlocomqx/svelte-reduxify#readme"
+  "homepage": "https://github.com/unlocomqx/svelte-reduxify#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
