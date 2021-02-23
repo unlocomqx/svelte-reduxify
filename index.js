@@ -56,6 +56,10 @@ function subscribeToDevTools(store, devTools) {
   // JUMP_TO_STATE: timeline Slider changed
   // ACTION: action sent from Dispatcher
   // dispatched action could be either state json or store function
+  if (typeof devTools.subscribe !== "function") {
+    console.warn("Svelte Reduxify: could not subscribe to devtools events (devtools.subscribe is not a function)");
+    return;
+  }
   devTools.subscribe(function (message) {
     if (message.type === "DISPATCH" && (message.payload.type === "JUMP_TO_ACTION" || message.payload.type === "JUMP_TO_STATE") && message.state) {
       // set send to false to avoid logging dispatched action
@@ -107,7 +111,8 @@ export function reduxify(store) {
           store[prop] = function () {
             lastAction = (dispatched ? "dispatched " : "") + prop;
             return fn.apply(store, arguments);
-          };;
+          };
+          ;
         }
       }
     }
