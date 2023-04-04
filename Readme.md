@@ -15,12 +15,12 @@ const store = reduxify(writable(0));
 ```
 
 ## Full example
-Original code from https://svelte.dev/examples#custom-stores
+Original code
 ```javascript
 import { writable } from 'svelte/store';
 
 function createCount() {
-  const {subscribe, set, update } = writable(0);
+  const { subscribe, set, update } = writable(0);
 
   return {
     subscribe,
@@ -38,7 +38,7 @@ import { writable } from 'svelte/store';
 import { reduxify } from "svelte-reduxify";
 
 function createCount() {
-  const {subscribe, set, update } = writable(0);
+  const { subscribe, set, update } = writable(0);
 
   return reduxify({
     update, // necessary for updating state from devtools
