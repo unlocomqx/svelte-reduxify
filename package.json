@@ -1,6 +1,6 @@
 {
   "name": "svelte-reduxify",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "connect your svelte store to redux devtools",
   "type": "module",
   "main": "index.js",
