@@ -17,7 +17,10 @@ function get(store) {
 
 function connectToDevTools() {
   // connect to redux devtools
-  var devTools = typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__.connect();
+  if (typeof window === 'undefined') {
+    return false;
+  }
+  var devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__.connect();
   if (!devTools) {
     console.info("Could not connect to redux devtools");
   }
